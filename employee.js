@@ -22,7 +22,7 @@ class Employee {
     return intro;
   }
 }
-let employee1 = new Employee(1, "Ian", "Auston", "Graphic Artist", 42.5);
+let employee1 = new Employee(1, "Ian", "Austin", "Graphic Artist", 42.5);
 console.log(`Employee ${employee1.fullName()} created`);
 
 employee1.promote("Sr. Graphic Artist", 46.75);
@@ -39,10 +39,10 @@ console.log(`Pay rate is $${employee1.payRate}`);
 
 //new employee//
 
-let employee2 = new Employee(2, "John", "Cena", "Wrestler", 400.5);
+let employee2 = new Employee(2, "Halle", "Bailey", "Singer/Actress", 335.5);
 console.log(`Employee ${employee2.fullName()} created`);
 
-employee2.promote("Wrestler", 500.75);
+employee2.promote("Singer/Actress", 502.75);
 
 console.log(`Job title is ${employee2.jobTitle}`);
 console.log(`Pay rate is $${employee2.payRate}`);
@@ -50,6 +50,6 @@ console.log(`Pay rate is $${employee2.payRate}`);
 //get intro//
 
 console.log(employee2.getIntro());
-employee2.promote("Wrestler", 500.75);
+employee2.promote("Singer/Actress", 502.75);
 console.log(`Job title is ${employee2.jobTitle}`);
 console.log(`Pay rate is $${employee2.payRate}`);
