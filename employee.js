@@ -1,24 +1,24 @@
 "use strtict";
 
 class Employee {
-  constructor(id, firstName, lastName, jobTitle, payRate) {
-    this.employeeId = id;
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.jobTitle = jobTitle;
-    this.payRate = payRate;
+  constructor(self, id, firstName, lastName, jobTitle, payRate) {
+    self.employeeId = id;
+    self.firstName = firstName;
+    self.lastName = lastName;
+    self.jobTitle = jobTitle;
+    self.payRate = payRate;
   }
 
   fullName() {
-    return this.firstName + " " + this.lastName;
+    return self.firstName + " " + self.lastName;
   }
 
   promote(newJobTitle, newPayRate) {
-    this.jobTitle = newJobTitle;
-    this.payRate = newPayRate;
+    self.jobTitle = newJobTitle;
+    self.payRate = newPayRate;
   }
   getIntro() {
-    let intro = `Hi! I'm ${this.fullName()} and I am a ${this.jobTitle}.`;
+    let intro = `Hi! I'm ${self.fullName()} and I am a ${self.jobTitle}.`;
     return intro;
   }
 }
